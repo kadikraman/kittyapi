@@ -7,5 +7,5 @@ API to get receive cat videos for your cat needs.
 
 # Usage
 - run 'python server.py'
-- go to localhost:5000/cats/next for a randomised cat video url
+- go to localhost:5000/cats/random for a randomised cat video url
 
