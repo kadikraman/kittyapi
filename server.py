@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, jsonify
 import requests
 
 
@@ -13,7 +13,7 @@ def next_cat():
     response = requests.get(GIPHY_CAT_URL)
     json = response.json()
     image_url = json['data']['image_mp4_url']
-    return image_url
+    return jsonify(url=image_url)
 
 
 if __name__ == "__main__":
